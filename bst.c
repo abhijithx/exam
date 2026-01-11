@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 struct node {
     int data;
     struct node *left;
@@ -26,7 +25,7 @@ void insert(int value) {
     }
 
     struct node *parent = NULL;
-    struct node *curr = root;
+    struct node *curr= root;
 
     while (curr != NULL) {
         parent = curr;
