@@ -1,3 +1,38 @@
+// Read number of vertices v.
+
+// Read the adjacency matrix matrix[v][v].
+
+// Replace 0 with a large value (like 999) to mean “no edge”.
+
+// Initialize parent[i] = i for all vertices.
+
+// Set edge = 0 and total = 0.
+
+// Repeat until edge < v - 1:
+
+// Find the smallest edge (a, b) in the entire matrix.
+
+// Find the parents:
+
+// u = find(a)
+
+// v2 = find(b)
+
+// If u != v2 (they are in different groups):
+
+// Print the edge (a, b) and its cost.
+
+// Add the cost to total.
+
+// Join the groups using unionSet(u, v2).
+
+// Increase edge by 1.
+
+// Remove this edge from consideration by setting
+// matrix[a][b] = matrix[b][a] = 999.
+
+// Print total cost of the Minimum Spanning Tree.
+
 #include <stdio.h>
 
 int parent[10];

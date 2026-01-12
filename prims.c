@@ -1,3 +1,38 @@
+// Read number of vertices v.
+
+// Read the adjacency matrix adj[v][v].
+
+// Replace 0 with a large value (like 99) to mean “no edge”.
+
+// Initialize all visited[i] = 0.
+
+// Read the starting vertex start.
+
+// Mark start as visited.
+
+// Set edge = 0 and mincost = 0.
+
+// Repeat while edge < v - 1:
+
+// Set min = INF.
+
+// For every vertex i:
+
+// If visited[i] == 1, check all vertices j:
+
+// If visited[j] == 0 and adj[i][j] < min,
+// update min, visitedVertex = i, unvisitedVertex = j.
+
+// Mark unvisitedVertex as visited.
+
+// Print the edge (visitedVertex → unvisitedVertex) and its cost.
+
+// Add min to mincost.
+
+// Increase edge by 1.
+
+// After the loop, print mincost.
+
 #include <stdio.h>
 int adj[10][10];
 int visited[10];
@@ -10,7 +45,6 @@ void prims(int start)
     int mincost = 0;
     int edge = 0;
     while (edge < v - 1)
-
     {
         int min = INF;
         int visitedVertex = -1;

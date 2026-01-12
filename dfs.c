@@ -1,3 +1,31 @@
+// Read number of vertices v.
+
+// Read the adjacency matrix adj[v][v].
+
+// Read the starting vertex start.
+
+// Initialize all visited[i] = 0.
+
+// Create an empty stack.
+
+// Push start onto the stack and mark it as visited.
+
+// While the stack is not empty:
+
+// Pop a vertex vertex from the stack.
+
+// Print vertex.
+
+// For every vertex i from 0 to v-1:
+
+// If adj[vertex][i] == 1 and visited[i] == 0:
+
+// Push i onto the stack.
+
+// Mark visited[i] = 1.
+
+// Repeat until the stack becomes empty.
+
 #include <stdio.h>
 int adj[10][10];
 int visited[10];

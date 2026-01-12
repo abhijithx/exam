@@ -1,3 +1,31 @@
+// Read number of vertices v.
+
+// Read the adjacency matrix adj[v][v].
+
+// Read the starting vertex start.
+
+// Initialize all visited[i] = 0.
+
+// Create an empty queue.
+
+// Enqueue start into the queue and mark it as visited.
+
+// While the queue is not empty:
+
+// Dequeue one vertex vertex.
+
+// Print vertex.
+
+// For every vertex i from 0 to v-1:
+
+// If adj[vertex][i] == 1 and visited[i] == 0:
+
+// Enqueue i into the queue.
+
+// Mark visited[i] = 1.
+
+// Repeat until the queue becomes empty.
+
 #include <stdio.h>
 int adj[10][10];
 int visited[10];
